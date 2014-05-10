@@ -1,0 +1,91 @@
+
+body {
+    background: white;
+}
+
+@page {
+    margin: 2.5cm;
+}
+
+.audioplayer_container {
+    display: none;
+}
+
+#wrapper {
+}
+
+#search-phusis * {
+    display:  none;
+}
+
+#search-cygne h1 img {
+    display: none;
+}
+
+#search-phusis, #search-cygne {
+    height: 140px;
+    background: none;
+}
+
+#phrase_du_jour, #searchform, #featuredposts, #respond, #highlight-menu {
+    display: none;
+}
+
+#print_header {
+    display: block;
+}
+
+#content {
+    width: 100%;
+}
+#main_nav {
+    display: none;
+}
+#entry_content {
+    margin: 0;
+    width: 100%;
+}
+#footer {
+    display: none;
+}
+
+#supplementary {
+    display: none;
+}
+
+p.date span.comments {
+    display: none;
+}
+
+/* Typography */
+
+body, .delicious-desc {
+
+	font-family: "Hoefler Text", "Constantia", Georgia, "Times New Roman", Times, serif;
+}
+
+h1, h2, h3, h4, h5, #main_nav ul, .date, .description, .ctitle, .fin,
+ 	.error, .navigation, .more-link, .comment-author, .comment-meta, .otherblog {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, sans-serif;
+}
+
+.entry {
+	font-size: 14pt;
+    text-align: justify;
+    font-family: Calibri, sans-serif;
+}
+
+.date {
+    font-size: 14pt;
+}
+
+#entry_content p.print_cygne {
+    display: block;
+    float: left;
+    margin: 0 1em 0 0;
+    height: 3em;
+}
+
+#entry_content p.print_cygne img {
+    height: 100%;
+}
