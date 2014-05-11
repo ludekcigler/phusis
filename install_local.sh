@@ -29,3 +29,6 @@ done
 
 # Copy extensions
 cp -R "${REPO_DIR}/wp-content/extensions/"* "${INSTALL_DIR}/wp-content/extensions/"
+
+# Copy the install script
+cp "${REPO_DIR}/install_remote.php" "${INSTALL_DIR}"
