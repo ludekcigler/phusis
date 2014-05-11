@@ -3,6 +3,14 @@ ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(-1);
 
+
+
+function make_directory($dir_name, $permissions = 0755) {
+  if (!is_dir($dir_name)) {
+    mkdir($dir_name, $permissions);
+  }
+}
+
 /**
  * Copy a file, or recursively copy a folder and its contents
  * @param       string   $source    Source path
@@ -23,9 +31,7 @@ function xcopy($source, $dest, $permissions = 0755)
     }
 
     // Make destination directory
-    if (!is_dir($dest)) {
-      mkdir($dest, $permissions);
-    }
+    make_directory($dest, $permissions);
 
     // Loop through the folder
     $dir = dir($source);
@@ -50,24 +56,28 @@ function copy_with_wildcards($src_pattern, $dest_dir) {
   }
 }
 
-function xcopy_with_wildcards($src_pattern, $dest_dir, $permissions = 0755) {
+function xcopy_with_wildcards($src_pattern, $dest_dir) {
   // Make plugin directory
-  if (!is_dir($dest_dir)) {
-    mkdir($dest_dir, $permissions);
-  }
+  make_directory($dest_dir);
 
   foreach (glob($src_pattern) as $src_file) {
     xcopy($src_file, sprintf('%s/%s', $dest_dir, basename($src_file)));
   }
 }
 
-$REPO_DIR = '/Users/lcigler/Documents/Personal/Dev/phusis';
-$DEST_ROOT = '/Users/lcigler/test';
-$sites = array('opsuisse');
+// Local directories (for testing)
+// $REPO_DIR = '/Users/lcigler/Documents/Personal/Dev/phusis';
+// $DEST_ROOT = '/Users/lcigler/test';
+// $sites = array('opsuisse');
+
+// Remote directories (for production)
+$REPO_DIR = dirname(__FILE__).'/../repo';
+$DEST_ROOT = dirname(__FILE__).'/..';
+$sites = array('phusis');
 
 foreach ($sites as $site) {
-  $theme_repo_dir = sprintf('%s/wp-content/themes/phusis/', $REPO_DIR);
-  $theme_dest_dir = sprintf('%s/%s/wp-content/themes/phusis/', $DEST_ROOT, $site);
+  $theme_repo_dir = sprintf('%s/wp-content/themes/phusis', $REPO_DIR);
+  $theme_dest_dir = sprintf('%s/%s/wp-content/themes/phusis', $DEST_ROOT, $site);
 
   // Install shared files
   copy_with_wildcards(sprintf('%s/*.*', $theme_repo_dir), $theme_dest_dir);
@@ -90,8 +100,8 @@ foreach ($sites as $site) {
   }
 
   // Install extensions (like newsletter template)
-  $ext_repo_dir = sprintf('%s/wp-content/extensions/', $REPO_DIR);
-  $ext_dest_dir = sprintf('%s/%s/wp-content/extensions/', $DEST_ROOT, $site);
+  $ext_repo_dir = sprintf('%s/wp-content/extensions', $REPO_DIR);
+  $ext_dest_dir = sprintf('%s/%s/wp-content/extensions', $DEST_ROOT, $site);
   xcopy_with_wildcards(sprintf('%s/*', $ext_repo_dir), $ext_dest_dir);
 }
 
