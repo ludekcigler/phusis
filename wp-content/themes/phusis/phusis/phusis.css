@@ -1,0 +1,47 @@
+
+dl.liste-des-vins dt {
+    font-size: 1em;
+}
+
+dl.liste-des-vins span {
+    display: inline-block;
+}
+
+dl.liste-des-vins dd {
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+dl.liste-des-vins dt .name {
+    font-weight: bold;
+    width: 20em;
+
+}
+
+dl.liste-des-vins dt .year {
+    font-weight: bold;
+    color: #333;
+    width: 5em;
+}
+
+dl.liste-des-vins dt .type {
+    width: 5em;
+    font-style: italic;
+}
+
+dl.liste-des-vins dt .volume {
+    font-weight: bold;
+    color: #333;
+    width: 5em;
+}
+
+dl.liste-des-vins dt .price {
+    font-weight: bold;
+    width: 5em;
+}
+
+/* Base classes */
+
+div.search {
+	height: 136px;
+}
