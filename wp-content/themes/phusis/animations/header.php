@@ -4,7 +4,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	
+
 	<title><?php
 	if (is_home()) {
 		echo bloginfo('name');
@@ -22,24 +22,25 @@
 	?>
 	</title>
 
-	
+
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all, print" />
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/animations.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/print.css" type="text/css" media="print" />
 	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom" href="<?php bloginfo('atom_url'); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="<?php bloginfo('url'); ?>/xmlrpc.php?rsd" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <link rel="shortcut icon" href="/favicon.ico" />
-	
-	
+
+
 	<!--[if lte IE 7]>
 	<link href="<?php bloginfo('template_directory'); ?>/ie.css" type="text/css" rel="stylesheet" media="screen" />
 	<![endif]-->
-	
+
 	<!--[if lte IE 6]>
 	<link href="<?php bloginfo('template_directory'); ?>/ie6.css" type="text/css" rel="stylesheet" media="screen" />
 	<![endif]-->
-	
+
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' );?>
 	<?php wp_head(); ?>
 
@@ -56,7 +57,7 @@
         <!-- New menu -->
         <div id="highlight-menu">
             <!-- Zarathustra -->
-            <?php 
+            <?php
             $article_list_template = '<li><a href="{url}"><span class="date">{date:d.m.}</span> <span class="title">{title:18:trim}</span></a></li>';
             $highlight_image_template = '<a href="{url}"><img alt="{imagealt}" src="{imagesrc}" height="72" width="64" /></a>';
 
@@ -80,7 +81,7 @@
             </div>
             </div>
 
-            <!-- Ludo et Bboul 
+            <!-- Ludo et Bboul
             <h3>Ludo et Bboul</h3>-->
             <?php //if (function_exists('recent_posts')) recent_posts('included_cats=30&' . $recent_posts_params); ?>
             <div class="highlight-menu-item">
@@ -89,9 +90,9 @@
             <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=13&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
             <?php if (function_exists('recent_posts')) recent_posts('included_cats=13&'.$recent_posts_params); ?>
             </div>
-            </div>            
+            </div>
 
-            <!-- Animation 
+            <!-- Animation
             <h3>Animation</h3>-->
             <?php //if (function_exists('recent_posts')) recent_posts('included_cats=6&' . $recent_posts_params); ?>
             <div class="highlight-menu-item">
@@ -100,9 +101,9 @@
             <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=6&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
             <?php if (function_exists('recent_posts')) recent_posts('included_cats=6&'.$recent_posts_params); ?>
             </div>
-            </div>            
+            </div>
 
-            <!-- Films de la semaine 
+            <!-- Films de la semaine
             <h3>Films de la semaine</h3>-->
             <?php //if (function_exists('recent_posts')) recent_posts('included_cats=31&' . $recent_posts_params); ?>
             <div style="clear:none"></div>
@@ -122,7 +123,7 @@
 			<?php //wp_list_pages('title_li=&depth=1'); ?>
 <?php $output = wp_list_pages('echo=0&depth=1&title_li=' );
 echo $output;
-?>            
+?>
 		    <li class="otherblog"><a href="/steve/">PHUSIS Vins</a></li>
 		</ul>
 
@@ -131,8 +132,6 @@ echo $output;
         </p>
 
         <?php the_widget("grouped_comments_widget", 'title=Derniers commentaires&comments_total=5&comments_per_post=2'); ?>
-		
+
 
 	</div>
-
-
