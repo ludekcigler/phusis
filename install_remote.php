@@ -73,7 +73,7 @@ function xcopy_with_wildcards($src_pattern, $dest_dir) {
 // Remote directories (for production)
 $REPO_DIR = dirname(__FILE__).'/../repo';
 $DEST_ROOT = dirname(__FILE__).'/..';
-$sites = array('phusis');
+$sites = array('phusis', 'steve');
 
 foreach ($sites as $site) {
   $theme_repo_dir = sprintf('%s/wp-content/themes/phusis', $REPO_DIR);

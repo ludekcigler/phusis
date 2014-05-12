@@ -4,7 +4,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	
+
 	<title><?php
 	if (is_home()) {
 		echo bloginfo('name');
@@ -22,23 +22,24 @@
 	?>
 	</title>
 
-	
+
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/steve.css" type="text/css" media="screen" />
 	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom" href="<?php bloginfo('atom_url'); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="<?php bloginfo('url'); ?>/xmlrpc.php?rsd" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <link rel="shortcut icon" href="/favicon.ico" />
-	
-	
+
+
 	<!--[if lte IE 7]>
 	<link href="<?php bloginfo('template_directory'); ?>/ie.css" type="text/css" rel="stylesheet" media="screen" />
 	<![endif]-->
-	
+
 	<!--[if lte IE 6]>
 	<link href="<?php bloginfo('template_directory'); ?>/ie6.css" type="text/css" rel="stylesheet" media="screen" />
 	<![endif]-->
-	
+
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' );?>
 	<?php wp_head(); ?>
 
@@ -63,15 +64,13 @@
 			<?php //wp_list_pages('title_li=&depth=1'); ?>
 <?php $output = wp_list_pages('echo=0&depth=1&title_li=' );
 echo $output;
-?>            
-		    <li class="otherblog"><a href="/michel/">MH | Un art de vivre</a></li>
+?>
+		    <li class="otherblog"><a href="/michel/">PHUSIS Vins</a></li>
 		    <li class="otherblog"><a href="/phusis/">Vin et philosophie</a></li>
 		</ul>
-		
+
         <p class="video">
             <?php if (function_exists('recent_posts')) recent_posts('included_cats=17&limit=1&prefix=&suffix=&output_template=<a href="{url}"><span class="title">{title}</span><span class="date">{date}</span><span class="preview"><img src="{videopreviewsrc}" width="64" height="48" alt="Aperçu : {title}" /><span class="flash-icon" ></span></span></a>'); ?>
         </p>
 
 	</div>
-
-
