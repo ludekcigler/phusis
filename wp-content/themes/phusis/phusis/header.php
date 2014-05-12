@@ -66,7 +66,7 @@
 echo $output;
 ?>
 		    <li class="otherblog"><a href="/steve/">PHUSIS Vins</a></li>
-		    <li class="otherblog"><a href="/michel/">PHUSIS Philosophie</a></li>
+		    <li class="otherblog"><a href="/philosophie/">PHUSIS Philosophie</a></li>
 		</ul>
 
         <p class="video">
