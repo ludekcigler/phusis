@@ -112,7 +112,7 @@
     </div>
 
 		<?php include (TEMPLATEPATH . '/searchform.php'); ?>
-    <?php if (is_page('Bienvenue')) { ?>
+    <?php if (is_page('Dernier article')) { ?>
       <p id="featuredposts"><img alt="&#x1f4fa;" src="<?php bloginfo('template_directory'); ?>/images/television.png" height="32" class="TV" /> <?php get_featured_posts(array('before' => '', 'after' => '', 'max_posts' => 1, 'method' => 'echo')); ?> </p>
     <?php } ?>
 	</div>
