@@ -29,7 +29,7 @@
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="<?php bloginfo('url'); ?>/xmlrpc.php?rsd" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-    <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="shortcut icon" href="/favicon.ico" />
 
 
 	<!--[if lte IE 7]>
@@ -48,13 +48,13 @@
 <body>
 <div id="wrapper">
 	<div class="search" id="<?php if (rand(0, 1) == 0) { echo 'search-phusis'; } else { echo 'search-cygne'; } ?>">
-        <h1><img alt="<?php bloginfo('description'); ?>" width="480" height="42" src="<?php bloginfo('template_directory'); ?>/images/phusis_phrase_phusis.png" /></h1>
-        <p id="phrase_du_jour"><a href="http://phusis.ch/phusis/aphorismes/"><?php stray_random_quote(); ?></a></p>
+    <h1><img alt="<?php bloginfo('description'); ?>" width="480" height="42" src="<?php bloginfo('template_directory'); ?>/images/phusis_phrase_phusis.png" /></h1>
+    <p id="phrase_du_jour"><a href="http://phusis.ch/phusis/aphorismes/"><?php stray_random_quote(); ?></a></p>
 		<span class="twitter"><!-- If you want to integrate Twitter, use http://rick.jinlabs.com/code/twitter/ and put the code snippet here.  --></span>
 		<?php include (TEMPLATEPATH . '/searchform.php'); ?>
-        <?php if (is_page('Bienvenue')) { ?>
-        <p id="featuredposts"><span class="title">À ne pas manquer :</span> <?php get_featured_posts(array('before' => '', 'after' => '', 'max_posts' => 1, 'method' => 'echo')); ?> </p>
-        <?php } ?>
+    <?php if (is_page('Bienvenue')) { ?>
+    <p id="featuredposts"><span class="title">À ne pas manquer :</span> <?php get_featured_posts(array('before' => '', 'after' => '', 'max_posts' => 1, 'method' => 'echo')); ?> </p>
+    <?php } ?>
 	</div>
 
 	<div id="main_nav">
@@ -62,16 +62,15 @@
 
 		<ul>
 			<?php //wp_list_pages('title_li=&depth=1'); ?>
-<?php $output = wp_list_pages('echo=0&depth=1&title_li=' );
-echo $output;
-?>
-		    <li class="otherblog"><a href="/steve/">PHUSIS Vins</a></li>
-		    <li class="otherblog"><a href="/philosophie/">PHUSIS Philosophie</a></li>
+      <?php $output = wp_list_pages('echo=0&depth=1&title_li=' );
+      echo $output;
+      ?>
+	    <li class="otherblog"><a href="/steve/">PHUSIS Vins</a></li>
+	    <li class="otherblog"><a href="/philosophie/">PHUSIS Philosophie</a></li>
 		</ul>
 
-        <p class="video">
-            <?php if (function_exists('recent_posts')) recent_posts('included_cats=17&limit=2&prefix=&suffix=&output_template=<a href="{url}"><span class="title">{title}</span><span class="date">{date}</span><span class="preview"><img src="{videopreviewsrc}" width="64" height="48" alt="Aperçu : {title}" /><span class="flash-icon" ></span></span></a>'); ?>
-        </p>
-
+    <p class="video">
+      <?php if (function_exists('recent_posts')) recent_posts('included_cats=17&limit=2&prefix=&suffix=&output_template=<a href="{url}"><span class="title">{title}</span><span class="date">{date}</span><span class="preview"><img src="{videopreviewsrc}" width="64" height="48" alt="Aperçu : {title}" /><span class="flash-icon" ></span></span></a>'); ?>
+    </p>
 
 	</div>

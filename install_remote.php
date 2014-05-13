@@ -65,6 +65,16 @@ function xcopy_with_wildcards($src_pattern, $dest_dir) {
   }
 }
 
+function rrmdir($dir) {
+  foreach(glob($dir . '/*') as $file) {
+    if(is_dir($file))
+      rrmdir($file);
+    else
+      unlink($file);
+  }
+  rmdir($dir);
+}
+
 // Local directories (for testing)
 // $REPO_DIR = '/Users/lcigler/Documents/Personal/Dev/phusis';
 // $DEST_ROOT = '/Users/lcigler/test';
@@ -104,6 +114,9 @@ foreach ($sites as $site) {
   $ext_dest_dir = sprintf('%s/%s/wp-content/extensions', $DEST_ROOT, $site);
   xcopy_with_wildcards(sprintf('%s/*', $ext_repo_dir), $ext_dest_dir);
 }
+
+// Delete the uploaded repo files
+rrmdir(sprintf('%s/wp-content', $REPO_DIR));
 
 echo "SUCCESS!";
 
