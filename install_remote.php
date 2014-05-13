@@ -100,7 +100,7 @@ foreach ($sites as $site) {
   $plugins_repo_dir = sprintf('%s/wp-content/plugins', $REPO_DIR);
   $plugins_dest_dir = sprintf('%s/%s/wp-content/plugins', $DEST_ROOT, $site);
   $dir = dir($plugins_repo_dir);
-  while (false !== $entry = $dir->read()) {
+  while ($dir && false !== $entry = $dir->read()) {
     // Skip pointers
     if ($entry == '.' || $entry == '..') {
       continue;
