@@ -115,9 +115,6 @@ foreach ($sites as $site) {
   xcopy_with_wildcards(sprintf('%s/*', $ext_repo_dir), $ext_dest_dir);
 }
 
-// Delete the uploaded repo files
-rrmdir(sprintf('%s/wp-content', $REPO_DIR));
-
 echo "SUCCESS!";
 
 ?>
