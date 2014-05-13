@@ -35,6 +35,10 @@ function xcopy($source, $dest, $permissions = 0755)
 
     // Loop through the folder
     $dir = dir($source);
+    if (!$dir) {
+      return false;
+    }
+
     while (false !== $entry = $dir->read()) {
         // Skip pointers
         if ($entry == '.' || $entry == '..') {
@@ -63,6 +67,24 @@ function xcopy_with_wildcards($src_pattern, $dest_dir) {
   foreach (glob($src_pattern) as $src_file) {
     xcopy($src_file, sprintf('%s/%s', $dest_dir, basename($src_file)));
   }
+}
+
+function xcopy_contents_with_wildcards($src_dir, $dest_dir) {
+  $dir = dir($src_dir);
+  if (!$dir) {
+    return false;
+  }
+
+  while (false !== $entry = $dir->read()) {
+    // Skip pointers
+    if ($entry == '.' || $entry == '..') {
+      continue;
+    }
+
+    xcopy_with_wildcards(sprintf('%s/%s/*', $src_dir, $entry), sprintf('%s/%s', $dest_dir, $entry));
+  }
+
+  $dir->close();
 }
 
 function rrmdir($dir) {
@@ -99,8 +121,9 @@ foreach ($sites as $site) {
   // Install plugins
   $plugins_repo_dir = sprintf('%s/wp-content/plugins', $REPO_DIR);
   $plugins_dest_dir = sprintf('%s/%s/wp-content/plugins', $DEST_ROOT, $site);
+  xcopy_contents_with_wildcards($plugins_repo_dir, $plugins_dest_dir);
+  /*
   $dir = dir($plugins_repo_dir);
-  var_dump($dir);
   while ($dir && false !== $entry = $dir->read()) {
     // Skip pointers
     if ($entry == '.' || $entry == '..') {
@@ -108,7 +131,7 @@ foreach ($sites as $site) {
     }
 
     xcopy_with_wildcards(sprintf('%s/%s/*', $plugins_repo_dir, $entry), sprintf('%s/%s', $plugins_dest_dir, $entry));
-  }
+  }*/
 
   // Install extensions (like newsletter template)
   $ext_repo_dir = sprintf('%s/wp-content/extensions', $REPO_DIR);
