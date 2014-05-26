@@ -55,26 +55,42 @@ $posts = get_posts($filters);
 <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <title>Phusis newsletter</title>
+  <style type="text/css">
+  @media screen and (max-width:639px) {
+    #comment_image {
+      display: none;
+    }
+
+    table.wrapper {
+      width:100% !important;
+      border:
+    }
+
+    table.article {
+      width:100% !important;
+    }
+  }
+  </style>
 </head>
 
 <body>
-<div id="body" style="margin: 0 auto; min-width: 600px; width: 60%; font-family: 'Lucida Grande', 'Lucida Sans Unicode', verdana, sans-serif; font-size: 100%;">
+<table cellspacing="0" cellpadding="0" class="wrapper" style="font-size: 14px; font-family: sans-serif; width: 640px; margin: 0 auto;"><tr><td>
 <table cellspacing="0" cellpadding="0" id="header" width="100%">
-<tr><td colspan="2"><h1 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal;"><img src="<?php bloginfo('url'); ?>/wp-content/extensions/newsletter/emails/themes/phusis/newsletter_title.png" alt="Phusis Philosophie et Animations; Michel Herren et Cie.; www.phusis.ch" width="100%"></h1></td></tr>
+<tr><td colspan="2"><h1 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal;"><img src="<?php bloginfo('url'); ?>/wp-content/extensions/newsletter/emails/themes/phusis/newsletter_title_philosophie.png" alt="Phusis Philosophie et Animations; Michel Herren et Cie.; www.phusis.ch" width="50%" style="min-width: 400px; max-width: 100%;"></h1></td></tr>></h1></td></tr>
 
 <tr>
 <td id="comment_image" style="vertical-align: middle; padding: 30px; width: 74px;"><img src="<?php bloginfo('url'); ?>/wp-content/extensions/newsletter/emails/themes/phusis/cygne_blanche.png" width="74" height="90" alt=""></td>
-    
-<td id="newsletter_comment" style="text-align: justify; padding: 1.2em 1.4em;">
+
+<td id="newsletter_comment" style="text-align: justify; padding: 10px;">
 GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le plaisir d’ouvrir un double chantier sur Dionysos, dieu artiste de la phusis, noyau générateur de tout phénomène vivant. Sous cette rubrique, nous présentons, traduisons et (ré)actualisons – court passage après court passage – les Bacchantes : tragédie grecque d’Euripide consacrée à Dionysos. Sous la rubrique Témoignages sur Dionysos, nous ferons de même avec les multiples textes le concernant qui nous sont parvenus à travers les âges. L’enjeu est de taille : permettre à Dionysos de se dévoiler à nouveau, comme formidable clé de lecture et ressource de notre pensée et de nos vies.
 </td>
 </tr>
 </table>
 
-<p>&nbsp;</p>
-
 <table cellspacing="0" cellpadding="0" id="articles" width="100%">
 <tr>
+  <td>
+
             <?php
             // Do not use &post, it leads to problems...
             $post_counter = 0;
@@ -91,24 +107,27 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                 // Extract a thumbnail, return null if no thumb can be found
                 $image = nt_post_image(get_the_ID());
             ?>
-              <td style="width: 50%; vertical-align: top; padding: 1.2em 1.4em;">
-                 <h2  style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal; margin: 0 0.4em; font-size: 160%;"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
-                  <p style="text-align: justify; margin: 0 0 1em 0;">
-                   
+            <table cellspacing="0" cellpadding="0" style="width: 50%; float: left; padding: 0; margin: 0; min-height: 320px;"><tr>
+              <td>
+                 <h2 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal; margin: 10px; min-height: 45px;"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
+                  <p style="margin: 10px;">
                     <?php if ($image != null) { ?>
-                    <img src="<?php echo $image; ?>" width="100%" height="120px" alt="" style="margin: 0.8em 0;">
-                    <?php } ?>                  
-                  
-                  <?php echo create_custom_excerpt($post->post_content); ?></p>
+                    <img src="<?php echo $image; ?>" width="100%" height="120px" alt="" style="margin-bottom: 10px;">
+                    <?php } ?>
+
+                    <?php echo create_custom_excerpt($post->post_content); ?>
+                  </p>
               </td>
+            </tr></table>
 <?php
-            if ($post_counter % 2 == 0) {
-                echo "\n</tr>\n<tr>\n";
-            }
 }
 ?>
+</td>
+</tr>
 </table>
-                  <p>Pour se désinscrire de la newsletter, <a href="{unsubscription_url}">cliquez ici</a>.</p>
-                  </div>
-      </body>
+<p style="padding: 0 10px;">Découvrez les activités de <a href="http://www.phusis.ch/animations/">Phusis | Animations</a> et <a href="http://www.phusis.ch/steve/">PHUSIS | Vins</a>.</p>
+
+<p style="padding: 0 10px;">Pour se désinscrire de newsletter, <a href="{unsubscription_url}">cliquez ici</a>.</p>
+</td></tr></table>
+</body>
 </html>

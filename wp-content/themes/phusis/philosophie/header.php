@@ -49,7 +49,7 @@
 <body>
 <div id="wrapper">
 	<div class="search" id="<?php if (rand(0, 1) == 0) { echo 'search-phusis'; } else { echo 'search-cygne'; } ?>">
-    <h1><img alt="<?php bloginfo('description'); ?>" width="520" height="42" src="<?php bloginfo('template_directory'); ?>/images/phusis_phrase_michel.png" /></h1>
+    <h1><img alt="<?php bloginfo('description'); ?>" width="520" height="42" src="<?php bloginfo('template_directory'); ?>/images/phusis_phrase_philosophie.png" /></h1>
     <img alt="Phusis" id="print_header" height="140" src="<?php bloginfo('template_directory'); ?>/images/cygne_print_michel.png" />
 
     <p id="phrase_du_jour"><a href="http://phusis.ch/phusis/aphorismes/"><?php stray_random_quote(); ?></a></p>

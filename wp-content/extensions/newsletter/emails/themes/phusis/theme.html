@@ -10,81 +10,107 @@
     font-weight: normal;
   }
 
-  #body {
+  .wrapper {
     margin: 0 auto;
-    min-width: 600px;
-    width: 60%;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, sans-serif;    
   }
 
-  #articles td {
-    width: 33%;
-    vertical-align: top;
+  table.article {
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
   }
 
-  #articles h2 {
-    min-height: 3.5em;
+  table.article {
+    min-height: 440px;
   }
 
-  #articles td p {
-    text-align: justify;
+  table.article td h2 {
+    margin: 10px;
+    min-height: 45px;
   }
 
-  #articles td > * {
-    margin: 0 0.4em;
+  table.article td p {
+    margin: 10px;
   }
 
-  #comment_image {
-    margin-right: 1em;
+  table.article td p img {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width:639px) {
+    #comment_image {
+      display: none;
+    }
+
+  	table.wrapper {
+  		width:100% !important;
+      border:
+  	}
+
+    table.article {
+  		width:100% !important;
+  	}
   }
 
   </style>
 </head>
 
 <body>
-<div id="body">
+<table cellspacing="0" cellpadding="0" id="header" class="wrapper" style="font-size: 14px; font-family: sans-serif; width: 640px"><tr><td>
 <table cellspacing="0" cellpadding="0" id="header" width="100%">
-<tr><td colspan="2"><h1><img src="newsletter_title.png" alt="Phusis Philosophie et Animations; Michel Herren et Cie.; www.phusis.ch" width="100%"></h1></td></tr>
+<tr><td colspan="2"><h1 style="margin: 0;"><img src="newsletter_title_philosophie.png" alt="Phusis Philosophie; Michel Herren et Cie.; www.phusis.ch" width="50%" style="min-width: 400px; max-width: 100%;"></h1></td></tr>
 
 <tr>
-<td><img id="comment_image" src="comment_image_default.jpg" alt=""></td>
-<td id="newsletter_comment">
+<td id="comment_image" style="vertical-align: middle; padding: 30px; width: 74px;"><img src="cygne_blanche.png" width="74" height="90" alt=""></td>
+
+<td id="newsletter_comment" style="text-align: justify; padding: 10px;">
 GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le plaisir d’ouvrir un double chantier sur Dionysos, dieu artiste de la phusis, noyau générateur de tout phénomène vivant. Sous cette rubrique, nous présentons, traduisons et (ré)actualisons – court passage après court passage – les Bacchantes : tragédie grecque d’Euripide consacrée à Dionysos. Sous la rubrique Témoignages sur Dionysos, nous ferons de même avec les multiples textes le concernant qui nous sont parvenus à travers les âges. L’enjeu est de taille : permettre à Dionysos de se dévoiler à nouveau, comme formidable clé de lecture et ressource de notre pensée et de nos vies.
 </td>
 </tr>
 </table>
 
 <table cellspacing="0" cellpadding="0" id="articles" width="100%">
-<tr><td colspan="3">
-<img class="phusis_spacer" src="phusis_spacer.png" alt="">
-<td>
-</tr>
-
 <tr>
-    <td>
+  <td>
+    <table class="article"><tr><td>
     <h2><a href="">Zarathoustra | Des hommes sublime</a></h2>
     <p>
         <img src="p1.png" width="100%" height="120px" alt="">
         POUR NOUS METTRE DANS L’AMBIANCE des Bacchantes d’Euripide, la première chose à faire, c’est de nous rendre en Grèce, la terre de nos célèbres ancêtres les Grecs...
     </p>
     </td>
-    <td>
+    </tr>
+    </table>
+
+    <table class="article" border="0" cellpadding="0" cellspacing="0"><tr><td>
     <h2><a href="">Bacchantes | Le retour de Dionysos</a></h2>
     <p>
         <img src="p2.png" width="100%" height="120px" alt="">
         POUR NOUS METTRE DANS L’AMBIANCE des Bacchantes d’Euripide, la première chose à faire, c’est de nous rendre en Grèce, la terre de nos célèbres ancêtres les Grecs. Une fois là-bas, il nous faut encore reculer dans le temps…
     </p>
-    </td>
-    <td>
+    </td></tr></table>
+
+    <table class="article" border="0" cellpadding="0" cellspacing="0"><tr><td>
     <h2><a href="">Sexe | Les femmes en péril</a></h2>
     <p><img src="p3.png" width="100%" height="120px" alt="">
     POUR NOUS METTRE DANS L’AMBIANCE des Bacchantes d’Euripide, la première chose à faire, c’est de nous rendre en Grèce, la terre de nos célèbres ancêtres les Grecs. Une fois là-bas, il nous faut encore reculer dans le temps…
     </p>
-    </td>
+    </td></tr></table>
+
+    <table class="article" border="0" cellpadding="0" cellspacing="0"><tr><td>
+    <h2><a href="">Bacchantes | Le retour de Dionysos</a></h2>
+    <p>
+        <img src="p2.png" width="100%" height="120px" alt="">
+        POUR NOUS METTRE DANS L’AMBIANCE des Bacchantes d’Euripide, la première chose à faire, c’est de nous rendre en Grèce, la terre de nos célèbres ancêtres les Grecs. Une fois là-bas, il nous faut encore reculer dans le temps…
+    </p>
+    </td></tr></table>
+  </td>
 </tr>
 </table>
-<p>Pour se désinscrire de newsletter, <a href="{unsubscription_url}">cliquez ici</a>.</p>
-</div>
+<p style="padding: 0 10px;">Découvrez les activités de <a href="http://www.phusis.ch/animations/">Phusis | Animations</a> et <a href="http://www.phusis.ch/steve/">PHUSIS | Vins</a>.</p>
+
+<p style="padding: 0 10px;">Pour se désinscrire de newsletter, <a href="{unsubscription_url}">cliquez ici</a>.</p>
+</td></tr></table>
 </body>
 </html>
-
