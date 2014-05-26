@@ -61,12 +61,12 @@ $posts = get_posts($filters);
       display: none;
     }
 
-    table.wrapper {
+    table[class="wrapper"] {
       width:100% !important;
       border:
     }
 
-    table.article {
+    table[class="article"] {
       width:100% !important;
     }
   }
