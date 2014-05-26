@@ -107,7 +107,7 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                 // Extract a thumbnail, return null if no thumb can be found
                 $image = nt_post_image(get_the_ID());
             ?>
-            <table cellspacing="0" cellpadding="0" style="width: 50%; float: left; padding: 0; margin: 0; min-height: 320px;"><tr>
+            <table cellspacing="0" cellpadding="0" class="article" style="width: 50%; float: left; padding: 0; margin: 0; min-height: 320px;"><tr>
               <td>
                  <h2 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal; margin: 10px; min-height: 45px;"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
                   <p style="margin: 10px;">
