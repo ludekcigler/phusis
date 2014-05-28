@@ -63,7 +63,15 @@ $posts = get_posts($filters);
 
     table[class="wrapper"] {
       width:100% !important;
-      border:
+      font-size: 18px !important;
+    }
+
+    h2 {
+      font-size: 22px !important;
+    }
+
+    .article_separator {
+      display: none;
     }
 
     table[class="article"] {
@@ -123,7 +131,7 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
             <?php
               if ($post_counter % 2 == 0) {
                 ?>
-                <div style="clear: both; height: 0px;"></div>
+                <div class="article_separator" style="clear: both; height: 0px;"></div>
                 <?php
               }
             }
