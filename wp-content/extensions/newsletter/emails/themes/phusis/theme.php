@@ -120,9 +120,14 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                   </p>
               </td>
             </tr></table>
-<?php
-}
-?>
+            <?php
+              if ($post_counter % 2 == 0) {
+                ?>
+                <div style="clear: both;"></div>
+                <?php
+              }
+            }
+            ?>
 </td>
 </tr>
 </table>
