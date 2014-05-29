@@ -24,7 +24,7 @@
 
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all, print" />
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/animations.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/animations.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/print.css" type="text/css" media="print" />
 	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom" href="<?php bloginfo('atom_url'); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS" href="<?php bloginfo('rss2_url'); ?>" />

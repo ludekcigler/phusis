@@ -1,0 +1,8 @@
+.animations .highlight-menu-item img {
+    height: 84px;
+    width: 100%;
+}
+
+.animations .highlight-menu-item > div > p {
+    margin: 0 1.5em 0 1em;
+}
