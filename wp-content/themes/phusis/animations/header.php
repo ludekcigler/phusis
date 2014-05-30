@@ -113,12 +113,8 @@
       echo $output;
       ?>
       <li class="otherblog"><a href="/phusis/">PHUSIS</a></li>
-      <li class="otherblog"><a href="/steve/">PHUSIS Philosophie</a></li>
+      <li class="otherblog"><a href="/philosophie/">PHUSIS Philosophie</a></li>
 	    <li class="otherblog"><a href="/steve/">PHUSIS Vins</a></li>
 		</ul>
-
-    <p class="video">
-      <?php if (function_exists('recent_posts')) recent_posts('included_cats=5&limit=3&prefix=&suffix=&output_template=<a href="{url}"><span class="title">{title}</span><span class="date">{date}</span><span class="preview"><img src="{videopreviewsrc}" width="64" height="48" alt="Aperçu : {title}" /><span class="flash-icon" ></span></span></a>'); ?>
-    </p>
 
 	</div>

@@ -1,6 +1,19 @@
+.animations .highlight-menu-item {
+  margin-right: 0;
+}
+
+.animations .highlight-menu-item > div > a {
+  margin: 0 1em;
+}
+
+.animations .highlight-menu-item p {
+  margin: 0;
+}
+
 .animations .highlight-menu-item img {
     height: 84px;
     width: 100%;
+    float: none;
 }
 
 .animations .highlight-menu-item > div > p {
