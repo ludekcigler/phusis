@@ -48,7 +48,7 @@
 <body>
 <div id="wrapper">
 	<div class="search" id="<?php if (rand(0, 1) == 0) { echo 'search-phusis'; } else { echo 'search-cygne'; } ?>">
-    <h1><img alt="<?php bloginfo('description'); ?>" width="480" height="42" src="<?php bloginfo('template_directory'); ?>/images/phusis_phrase_phusis.png" /></h1>
+    <h1><img alt="<?php bloginfo('description'); ?>" width="100" height="42" src="<?php bloginfo('template_directory'); ?>/images/phusis_phrase_phusis_2.png" /></h1>
     <p id="phrase_du_jour"><a href="http://phusis.ch/phusis/aphorismes/"><?php stray_random_quote(); ?></a></p>
 		<span class="twitter"><!-- If you want to integrate Twitter, use http://rick.jinlabs.com/code/twitter/ and put the code snippet here.  --></span>
 		<?php include (TEMPLATEPATH . '/searchform.php'); ?>

@@ -67,7 +67,7 @@
 
       <div class="highlight-menu-item">
       <div>
-      <h3><a href="http://phusis.ch/michel/philosophie/nietzsche/traductions/zarathoustra/">Zarathoustra</a></h3>
+      <h3><a href="<?php bloginfo('url');?>/philosophie/nietzsche/traductions/zarathoustra/">Zarathoustra</a></h3>
       <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=24&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
       <?php if (function_exists('recent_posts')) recent_posts('included_cats=24&'.$recent_posts_params); ?>
       </div>
@@ -77,7 +77,7 @@
       <?php //if (function_exists('recent_posts')) recent_posts('included_cats=28&' . $recent_posts_params); ?>
       <div class="highlight-menu-item">
       <div>
-      <h3><a href="http://phusis.ch/michel/dionysos/les-bacchantes/">Les Bacchantes</a></h3>
+      <h3><a href="<?php bloginfo('url');?>/dionysos/les-bacchantes/">Les Bacchantes</a></h3>
       <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=28&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
       <?php if (function_exists('recent_posts')) recent_posts('included_cats=28&'.$recent_posts_params); ?>
       </div>
@@ -88,7 +88,7 @@
       <?php //if (function_exists('recent_posts')) recent_posts('included_cats=30&' . $recent_posts_params); ?>
       <div class="highlight-menu-item">
       <div>
-      <h3><a href="http://phusis.ch/michel/pensees-phusiques/">Chroniques</a></h3>
+      <h3><a href="<?php bloginfo('url');?>/pensees-phusiques/">Chroniques</a></h3>
       <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=13&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
       <?php if (function_exists('recent_posts')) recent_posts('included_cats=13&'.$recent_posts_params); ?>
       </div>
@@ -99,7 +99,7 @@
       <?php //if (function_exists('recent_posts')) recent_posts('included_cats=6&' . $recent_posts_params); ?>
       <div class="highlight-menu-item">
       <div>
-      <h3><a href="http://phusis.ch/michel/animations-contact/">Animations</a></h3>
+      <h3><a href="<?php bloginfo('url');?>/animations-contact/">Animations</a></h3>
       <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=6&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
       <?php if (function_exists('recent_posts')) recent_posts('included_cats=6&'.$recent_posts_params); ?>
       </div>
