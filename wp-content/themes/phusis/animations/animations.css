@@ -1,8 +1,9 @@
-.animations .highlight-menu-item {
+.animations .highlight-menu-item > div {
   margin-right: 0;
 }
 
 .animations .highlight-menu-item > div > a {
+  display: block;
   margin: 0 1em;
 }
 
