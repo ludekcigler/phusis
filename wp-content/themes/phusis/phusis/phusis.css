@@ -1,3 +1,7 @@
 div.search {
 	height: 136px;
 }
+
+#phrase_du_jour {
+    left: 200px;
+}

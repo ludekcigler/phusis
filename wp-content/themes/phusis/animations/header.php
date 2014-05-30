@@ -49,10 +49,8 @@
 <body class="animations">
 <div id="wrapper">
 	<div class="search" id="<?php if (rand(0, 1) == 0) { echo 'search-phusis'; } else { echo 'search-cygne'; } ?>">
-    <h1><img alt="<?php bloginfo('description'); ?>" width="520" height="42" src="<?php bloginfo('template_directory'); ?>/images/phusis_phrase_michel.png" /></h1>
+    <h1><img alt="<?php bloginfo('description'); ?>" width="520" height="42" src="<?php bloginfo('template_directory'); ?>/images/phusis_phrase_animations.png" /></h1>
     <img alt="Phusis" id="print_header" height="140" src="<?php bloginfo('template_directory'); ?>/images/cygne_print_michel.png" />
-
-    <p id="phrase_du_jour"><a href="http://phusis.ch/phusis/aphorismes/"><?php stray_random_quote(); ?></a></p>
 
 		<span class="twitter"><!-- If you want to integrate Twitter, use http://rick.jinlabs.com/code/twitter/ and put the code snippet here.  --></span>
 
@@ -66,29 +64,37 @@
 
       <div class="highlight-menu-item">
       <div>
-      <h3><a href="<?php echo get_category_link(get_category_by_slug('sport'));?>">Sport</a></h3>
+      <a href="<?php bloginfo('url');?>/animations/">
+      <h3>Sport</h3>
       <p><img src="<?php bloginfo('template_directory'); ?>/images/animations/menu_sport.jpg" /></p>
+      </a>
       </div>
       </div>
 
       <div class="highlight-menu-item">
       <div>
-      <h3><a href="<?php echo get_category_link(get_category_by_slug('communication'));?>">Communication</a></h3>
+      <a href="<?php bloginfo('url');?>/communication/">
+      <h3>Communication</h3>
       <p><img src="<?php bloginfo('template_directory'); ?>/images/animations/menu_communication.jpg" /></p>
+      </a>
       </div>
       </div>
 
       <div class="highlight-menu-item">
       <div>
-      <h3><a href="<?php echo get_category_link(get_category_by_slug('traductions'));?>">Traductions</a></h3>
+      <a href="<?php bloginfo('url');?>/traductions/">
+      <h3>Traductions</h3>
       <p><img src="<?php bloginfo('template_directory'); ?>/images/animations/menu_traductions.jpg" /></p>
+      </a>
       </div>
       </div>
 
       <div class="highlight-menu-item">
       <div>
-      <h3><a href="<?php echo get_category_link(get_category_by_slug('conferences'));?>">Conférences</a></h3>
+      <a href="<?php bloginfo('url');?>/conferences/">
+      <h3>Conférences</h3>
       <p><img src="<?php bloginfo('template_directory'); ?>/images/animations/menu_conferences.jpg" /></p>
+      </a>
       </div>
       </div>
 

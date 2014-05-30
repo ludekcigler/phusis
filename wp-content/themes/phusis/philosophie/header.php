@@ -46,7 +46,7 @@
 
 </head>
 
-<body>
+<body class="philosophie">
 <div id="wrapper">
 	<div class="search" id="<?php if (rand(0, 1) == 0) { echo 'search-phusis'; } else { echo 'search-cygne'; } ?>">
     <h1><img alt="<?php bloginfo('description'); ?>" width="520" height="42" src="<?php bloginfo('template_directory'); ?>/images/phusis_phrase_philosophie.png" /></h1>
