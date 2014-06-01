@@ -65,7 +65,7 @@
       <div class="highlight-menu-item">
       <div>
       <a href="<?php bloginfo('url');?>/animations/">
-      <h3>Sport</h3>
+      <h3>Animations</h3>
       <p><img src="<?php bloginfo('template_directory'); ?>/images/animations/menu_sport.jpg" /></p>
       </a>
       </div>
