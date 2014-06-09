@@ -67,7 +67,7 @@ $posts = get_posts($filters);
     }
 
     h2 {
-      font-size: 24px !important;
+      font-size: 26px !important;
     }
 
     .article_separator {
