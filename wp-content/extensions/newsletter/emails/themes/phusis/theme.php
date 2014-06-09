@@ -146,11 +146,12 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
 </td>
 </tr>
 </table>
-<p style="padding: 0 10px; font-family: sans-serif;">
+<hr style="margin: 0 14px;">
+<p style="padding: 0 14px; font-family: sans-serif;">
 Ne manquez pas de cliquer sur <a href="http://www.phusis.ch/animations/">PHUSIS Animations</a> et <a href="http://www.phusis.ch/steve/">PHUSIS Vins</a> pour découvrir les activités, services et produits de l'ensemble de notre gamme.
 </p>
 
-<p style="padding: 0 10px; font-family: sans-serif;">Vous avez une bonne raison de ne plus vouloir recevoir notre newsletter? <a href="{unsubscription_url}">Cliquez ici</a>.</p>
+<p style="padding: 0 14px; font-family: sans-serif;">Vous avez une bonne raison de ne plus vouloir recevoir notre newsletter? <a href="{unsubscription_url}">Cliquez ici</a>.</p>
 </td></tr></table>
 </body>
 </html>
