@@ -56,18 +56,18 @@ $posts = get_posts($filters);
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <title>Phusis newsletter</title>
   <style type="text/css">
-  @media screen and (max-width:639px) {
+  @media screen and (max-width:599px) {
     #comment_image {
       display: none;
     }
 
     table[class="wrapper"] {
       width:100% !important;
-      font-size: 18px !important;
+      font-size: 20px !important;
     }
 
     h2 {
-      font-size: 22px !important;
+      font-size: 24px !important;
     }
 
     .article_separator {
@@ -82,7 +82,7 @@ $posts = get_posts($filters);
 </head>
 
 <body>
-<table cellspacing="0" cellpadding="0" class="wrapper" style="font-size: 14px; font-family: sans-serif; width: 640px; margin: 0 auto;"><tr><td>
+<table cellspacing="0" cellpadding="0" class="wrapper" style="font-size: 14px; font-family: sans-serif; width: 600px; margin: 0 auto;"><tr><td>
 <table cellspacing="0" cellpadding="0" id="header" width="100%">
 <tr><td colspan="2"><h1 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal;"><img src="<?php bloginfo('url'); ?>/wp-content/extensions/newsletter/emails/themes/phusis/newsletter_title_philosophie.png" alt="Phusis Philosophie et Animations; Michel Herren et Cie.; www.phusis.ch" width="50%" style="min-width: 400px; max-width: 100%;"></h1></td></tr>
 
@@ -117,15 +117,22 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
             ?>
             <table cellspacing="0" cellpadding="0" class="article" style="width: 50%; float: left; padding: 0; margin: 0;"><tr>
               <td>
-                 <h2 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal; margin: 10px; font-size: 18px;">
+                <table cellspacing="0" cellpadding="0" width="100%">
+                 <tr><td>
+                    <h2 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal; margin: 10px; font-size: 20px;">
                    <a style="text-decoration: none;" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
-                  <p style="margin: 10px; text-align: justify; font-family: sans-serif;">
+                </td></tr>
                     <?php if ($image != null) { ?>
-                    <img src="<?php echo $image; ?>" width="100%" height="120px" alt="" style="margin-bottom: 10px;"><br>
+                    <tr><td style="padding: 0 14px;">
+                    <table cellpadding="0" cellspacing="0"><tr><td>
+                    <img src="<?php echo $image; ?>" width="100%" height="120px" alt="" style="margin-bottom: 10px;">
+                    </td></tr></table>
+                    </td></tr>
                     <?php } ?>
-
+                  <tr><td style="text-align: justify; font-family: sans-serif; padding: 14px;">
                     <?php echo create_custom_excerpt($post->post_content); ?>
-                  </p>
+                  </td></tr>
+                  </table>
               </td>
             </tr></table>
             <?php
@@ -139,9 +146,11 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
 </td>
 </tr>
 </table>
-<p style="padding: 0 10px; font-family: sans-serif;">Découvrez les activités de <a href="http://www.phusis.ch/animations/">Phusis | Animations</a> et <a href="http://www.phusis.ch/steve/">PHUSIS | Vins</a>.</p>
+<p style="padding: 0 10px; font-family: sans-serif;">
+Ne manquez pas de cliquer sur <a href="http://www.phusis.ch/animations/">PHUSIS Animations</a> et <a href="http://www.phusis.ch/steve/">PHUSIS Vins</a> pour découvrir les activités, services et produits de l'ensemble de notre gamme.
+</p>
 
-<p style="padding: 0 10px; font-family: sans-serif;">Pour se désinscrire de la newsletter, <a href="{unsubscription_url}">cliquez ici</a>.</p>
+<p style="padding: 0 10px; font-family: sans-serif;">Vous avez une bonne raison de ne plus vouloir recevoir notre newsletter? <a href="{unsubscription_url}">Cliquez ici</a>.</p>
 </td></tr></table>
 </body>
 </html>
