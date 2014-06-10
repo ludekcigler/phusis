@@ -49,11 +49,10 @@ if (is_array($theme_options['theme_categories'])) {
 $posts = get_posts($filters);
 
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <title>Phusis newsletter</title>
   <style type="text/css">
   @media screen and (max-width:599px) {
@@ -161,8 +160,6 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
               }
             }
             ?>
-</td>
-</tr>
 </table>
 <hr style="margin: 0 14px;">
 <p style="padding: 0 14px; font-family: sans-serif;">
