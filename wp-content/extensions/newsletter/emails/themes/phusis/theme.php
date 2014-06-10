@@ -121,7 +121,7 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
               }
             ?>
             <table cellspacing="0" cellpadding="0" class="article"
-              style="width: 300px; padding: 0; margin: 0;"
+              style="width: 296px; padding: 0; margin: 0;"
               <?php
               if ($post_counter % 2 == 0) {
                 ?>
