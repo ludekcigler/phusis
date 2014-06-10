@@ -96,8 +96,6 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
 </table>
 
 <table cellspacing="0" cellpadding="0" id="articles" width="100%">
-<tr>
-  <td>
 
             <?php
             // Do not use &post, it leads to problems...
@@ -115,7 +113,27 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                 // Extract a thumbnail, return null if no thumb can be found
                 $image = nt_post_image(get_the_ID());
             ?>
-            <table cellspacing="0" cellpadding="0" class="article" style="width: 50%; float: left; padding: 0; margin: 0;"><tr>
+            <?php
+              if ($post_counter % 2 == 1) {
+                ?>
+                <tr><td>
+                <?php
+              }
+            ?>
+            <table cellspacing="0" cellpadding="0" class="article"
+              style="width: 300px; padding: 0; margin: 0;"
+              <?php
+              if ($post_counter % 2 == 0) {
+                ?>
+                align="right"
+                <?php
+              } else {
+                ?>
+                align="left"
+                <?php
+              }
+              ?>
+            ><tr>
               <td>
                 <table cellspacing="0" cellpadding="0" width="100%">
                  <tr><td>
@@ -138,7 +156,7 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
             <?php
               if ($post_counter % 2 == 0) {
                 ?>
-                <div class="article_separator" style="clear: both; height: 0px;"></div>
+                </td></tr>
                 <?php
               }
             }
