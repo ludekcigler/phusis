@@ -13,12 +13,12 @@
             $page_principale = get_post_meta($post->ID, 'page-principale', true);
             $categorie = get_post_meta($post->ID, 'categorie', true);
             $suite = get_post_meta($post->ID, 'suite', true);
-            $recent_posts_params = get_post_meta($post->ID, 'recent-posts', true);
+            $recent_posts_page_specified = get_post_meta($post->ID, 'recent-posts', true);
             
             if ($page_principale == 'bienvenue' or $suite == 'bienvenue') {
 				recent_posts('limit=1&prefix=&suffix=&output_template=<h2><a href="{url}" rel="bookmark" title="Permalien vers {title}">{title}</a></h2>');
-            } elseif (isset($recent_posts_params)) {
-              recent_posts($recent_posts_params);
+            } elseif (isset($recent_posts_page_specified)) {
+              recent_posts($recent_posts_page_specified);
             } else {
             ?>
 
