@@ -17,7 +17,7 @@
             
             if ($page_principale == 'bienvenue' or $suite == 'bienvenue') {
 				recent_posts('limit=1&prefix=&suffix=&output_template=<h2><a href="{url}" rel="bookmark" title="Permalien vers {title}">{title}</a></h2>');
-            } elseif (isset($recent_posts_page_specified)) {
+            } elseif ($recent_posts_page_specified) {
               recent_posts($recent_posts_page_specified);
             } else {
             ?>
