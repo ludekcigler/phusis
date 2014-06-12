@@ -1,0 +1,40 @@
+body, html {
+    background: #ECF8E0;
+    font-family: "Herculanum", "Lucida Grande", "Lucida Sans Unicode", verdana, sans-serif;
+    font-size: 120%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main_panel {
+  width: 50%;
+  float: left;
+  height: 100%;
+  margin: 0;
+  display: table;
+}
+
+.main_panel .subsite {
+  width: 100%;
+  height: 33.33%;
+  padding: 0;
+  display: table;
+}
+
+.main_panel .subsite a, .phusis a {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+}
+
+.subsite_title {
+  margin: 0 30px;
+}
+
+.animations, .vins {
+    background: #B2D1B2;
+}
