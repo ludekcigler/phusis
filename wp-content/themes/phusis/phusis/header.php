@@ -67,6 +67,7 @@
       ?>
 	    <li class="otherblog"><a href="/steve/">PHUSIS Vins</a></li>
 	    <li class="otherblog"><a href="/philosophie/">PHUSIS Philosophie</a></li>
+	    <li class="otherblog"><a href="/animations/">PHUSIS Animations</a></li>
 		</ul>
 
     <p class="video">

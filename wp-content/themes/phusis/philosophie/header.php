@@ -126,6 +126,7 @@
       <?php $output = wp_list_pages('echo=0&depth=1&title_li=' );
       echo $output;
       ?>
+	    <li class="otherblog"><a href="/animations/">PHUSIS Animations</a></li>
 	    <li class="otherblog"><a href="/steve/">PHUSIS Vins</a></li>
 		</ul>
 
