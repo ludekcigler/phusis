@@ -99,7 +99,7 @@
       <?php //if (function_exists('recent_posts')) recent_posts('included_cats=6&' . $recent_posts_params); ?>
       <div class="highlight-menu-item">
       <div>
-      <h3><a href="<?php bloginfo('url');?>/animations-contact/">Animations</a></h3>
+      <h3><a href="http://phusis.ch/animations/">Animations</a></h3>
       <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=6&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
       <?php if (function_exists('recent_posts')) recent_posts('included_cats=6&'.$recent_posts_params); ?>
       </div>
