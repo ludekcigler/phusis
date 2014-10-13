@@ -58,7 +58,7 @@
 	</div>
 
 	<div id="main_nav">
-		<h1 class="masthead"><a href="<?php bloginfo('url');?>/etymologie/"><?php bloginfo('name'); ?></a></h1>
+		<h1 class="masthead"><a href="<?php bloginfo('url');?>"><?php bloginfo('name'); ?></a></h1>
 
 		<ul>
 			<?php //wp_list_pages('title_li=&depth=1'); ?>
