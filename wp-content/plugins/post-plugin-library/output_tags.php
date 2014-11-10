@@ -629,7 +629,7 @@ function otf_videopreviewsrc($option_key, $result, $ext) {
 	if (!$i) $i = 0;
 	$embedsrc = $matches[2][$i];
 
-    $videoUrls = array('@http://www.youtube.com/v/([-_[:alnum:]]*)@',
+    $videoUrls = array('@http[s]?://www.youtube.com/v/([-_[:alnum:]]*)@',
                        '@//www.youtube.com/v/([-_[:alnum:]]*)@',
                        '@http[s]?://www.youtube.com/embed/([-_[:alnum:]]*)@',
                        '@http://www.viddler.com/player/([[:alnum:]]*)/@',

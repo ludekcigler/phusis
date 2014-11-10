@@ -55,7 +55,7 @@ $posts = get_posts($filters);
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <title>Phusis newsletter</title>
   <style type="text/css">
-  @media screen and (max-width:599px) {
+  @media screen and (max-width:499px) {
     #comment_image {
       display: none;
     }
@@ -81,7 +81,7 @@ $posts = get_posts($filters);
 </head>
 
 <body>
-<table cellspacing="0" cellpadding="0" class="wrapper" style="font-size: 14px; font-family: sans-serif; width: 600px; margin: 0 auto;"><tr><td>
+<table cellspacing="0" cellpadding="0" class="wrapper" style="font-size: 14px; font-family: sans-serif; width: 500px; margin: 0 auto;"><tr><td>
 <table cellspacing="0" cellpadding="0" id="header" width="100%">
 <tr><td colspan="2"><h1 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal;"><img src="<?php bloginfo('url'); ?>/wp-content/extensions/newsletter/emails/themes/phusis/newsletter_title_philosophie.png" alt="Phusis Philosophie et Animations; Michel Herren et Cie.; www.phusis.ch" width="50%" style="min-width: 400px; max-width: 100%;"></h1></td></tr>
 
@@ -98,10 +98,7 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
 
             <?php
             // Do not use &post, it leads to problems...
-            $post_counter = 0;
             foreach ($posts as $post) {
-                $post_counter += 1;
-
                 // Setup the post (WordPress requirement)
                 setup_postdata($post);
 
@@ -112,26 +109,9 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                 // Extract a thumbnail, return null if no thumb can be found
                 $image = nt_post_image(get_the_ID());
             ?>
-            <?php
-              if ($post_counter % 2 == 1) {
-                ?>
                 <tr><td>
-                <?php
-              }
-            ?>
             <table cellspacing="0" cellpadding="0" class="article"
-              style="width: 296px; padding: 0; margin: 0;"
-              <?php
-              if ($post_counter % 2 == 0) {
-                ?>
-                align="right"
-                <?php
-              } else {
-                ?>
-                align="left"
-                <?php
-              }
-              ?>
+              style="width: 100%; padding: 0; margin: 0;"
             ><tr>
               <td>
                 <table cellspacing="0" cellpadding="0" width="100%">
@@ -152,14 +132,7 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                   </table>
               </td>
             </tr></table>
-            <?php
-              if ($post_counter % 2 == 0) {
-                ?>
                 </td></tr>
-                <?php
-              }
-            }
-            ?>
 </table>
 <hr style="margin: 0 14px;">
 <p style="padding: 0 14px; font-family: sans-serif;">
