@@ -111,7 +111,7 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
             ?>
                 <tr>
                 <?php if ($image != null) { ?>
-                  <td style="padding: 10px;" width="33%">
+                  <td style="padding: 10px;" width="74px">
                     <div>
                       <a style="text-decoration: none;" href="<?php echo get_permalink(); ?>">
                         <img src="<?php echo $image; ?>" width="100%" alt="">
@@ -136,7 +136,12 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
           }
             ?>
             <tr>
-                <td style="padding: 10px;" width="33%">
+              <td colspan="2">
+                <hr style="margin: 0 14px;">
+              </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;" width="74px">
                   <div>
                     <a style="text-decoration: none;" href="http://phusis.ch/vins/">
                       <img src="http://phusis.ch/index/phusis_transparent.png" width="100%" alt="">
