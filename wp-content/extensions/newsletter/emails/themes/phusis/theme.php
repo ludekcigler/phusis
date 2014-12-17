@@ -88,7 +88,7 @@ $posts = get_posts($filters);
 <tr>
 <td id="comment_image" style="vertical-align: middle; padding: 30px; width: 74px;"><img src="<?php bloginfo('url'); ?>/wp-content/extensions/newsletter/emails/themes/phusis/cygne_blanche.png" width="74" height="90" alt=""></td>
 
-<td id="newsletter_comment" style="text-align: justify; padding: 14px; font-family: sans-serif;">
+<td id="newsletter_comment" style="text-align: justify; padding: 14px; font-family: sans-serif; font-size: 12px;">
 GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le plaisir d’ouvrir un double chantier sur Dionysos, dieu artiste de la phusis, noyau générateur de tout phénomène vivant. Sous cette rubrique, nous présentons, traduisons et (ré)actualisons – court passage après court passage – les Bacchantes : tragédie grecque d’Euripide consacrée à Dionysos. Sous la rubrique Témoignages sur Dionysos, nous ferons de même avec les multiples textes le concernant qui nous sont parvenus à travers les âges. L’enjeu est de taille : permettre à Dionysos de se dévoiler à nouveau, comme formidable clé de lecture et ressource de notre pensée et de nos vies.
 </td>
 </tr>
@@ -121,10 +121,10 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                   </td>
                 <?php } ?>
                 <td>
-                <h2 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal; margin: 14px; font-size: 20px;">
+                <h2 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal; margin: 0 14px; font-size: 18px;">
                    <a style="text-decoration: none;" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
                 </h2>
-                <p style="text-align: justify; font-family: sans-serif; font-size: 10px; margin-top: 14px;">
+                <p style="text-align: justify; font-family: sans-serif; font-size: 12px; margin-top: 14px;">
                     <?php echo create_custom_excerpt($post->post_content); ?>
                 </p>
               </td>
@@ -137,11 +137,11 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                 </td></tr>
 </table>
 <hr style="margin: 0 14px;">
-<p style="padding: 0 14px; font-family: sans-serif;">
+<p style="padding: 0 14px; font-family: sans-serif; font-size: 12px;">
 Ne manquez pas de cliquer sur <a href="http://www.phusis.ch/animations/">PHUSIS Animations</a> et <a href="http://www.phusis.ch/steve/">PHUSIS Vins</a> pour découvrir les activités, services et produits de l'ensemble de notre gamme.
 </p>
 
-<p style="padding: 0 14px; font-family: sans-serif;">Vous avez une bonne raison de ne plus vouloir recevoir notre newsletter? <a href="{unsubscription_url}">Cliquez ici</a>.</p>
+<p style="padding: 0 14px; font-family: sans-serif; font-size: 12px;">Vous avez une bonne raison de ne plus vouloir recevoir notre newsletter? <a href="{unsubscription_url}">Cliquez ici</a>.</p>
 </td></tr></table>
 </body>
 </html>
