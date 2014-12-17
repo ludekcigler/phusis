@@ -134,6 +134,7 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
               </td>
             </tr>
           </table>
+        </td></tr>
             <?php
           }
             ?>
