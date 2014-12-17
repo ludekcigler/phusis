@@ -111,7 +111,7 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
             ?>
                 <tr>
                 <?php if ($image != null) { ?>
-                  <td style="padding: 0 14px;" width="33%">
+                  <td style="padding: 10px;" width="33%">
                     <div>
                       <a style="text-decoration: none;" href="<?php echo get_permalink(); ?>">
                         <img src="<?php echo $image; ?>" width="100%" alt="">
@@ -119,8 +119,10 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                     </div>
                   </td>
                 <?php } ?>
-                <td>
-                <h2 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal; margin: 0 14px; font-size: 18px;">
+                <td style="padding: 10px;"
+                <?php if ($image == null) { ?> colspan="2" <?php } ?>
+                >
+                <h2 style="padding: 0; font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal; margin: 0; font-size: 18px;">
                    <a style="text-decoration: none;" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
                 </h2>
                 <p style="text-align: justify; font-family: sans-serif; font-size: 12px; margin-top: 14px;">
@@ -134,15 +136,15 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
           }
             ?>
             <tr>
-                <td style="padding: 0 14px;" width="33%">
+                <td style="padding: 10px;" width="33%">
                   <div>
                     <a style="text-decoration: none;" href="http://phusis.ch/vins/">
                       <img src="http://phusis.ch/index/phusis_transparent.png" width="100%" alt="">
                     </a>
                   </div>
                 </td>
-                <td>
-                  <h2 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal; margin: 0 14px; font-size: 18px;">
+                <td style="padding: 10px;">
+                  <h2 style="padding: 0; font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal; margin: 0; font-size: 18px;">
                     <a style="text-decoration: none;" href="http://phusis.ch/vins/">Les nouvelles de PHUSIS Vins</a>
                   </h2>
                   <p style="text-align: justify; font-family: sans-serif; font-size: 12px; margin-top: 14px;">
