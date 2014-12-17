@@ -113,23 +113,20 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
             <table cellspacing="0" cellpadding="0" class="article"
               style="width: 100%; padding: 0; margin: 0;"
             ><tr>
-              <td>
-                <table cellspacing="0" cellpadding="0" width="100%">
-                 <tr><td>
-                    <h2 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal; margin: 14px; font-size: 20px;">
-                   <a style="text-decoration: none;" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
-                </td></tr>
-                    <?php if ($image != null) { ?>
-                    <tr><td style="padding: 0 14px;">
+                <?php if ($image != null) { ?>
+                  <td style="padding: 0 14px; width: 33%;">
                     <div>
-                    <img src="<?php echo $image; ?>" width="100%" height="120px" alt="" style="margin-bottom: 10px;">
+                      <img src="<?php echo $image; ?>" width="100%" alt="">
                     </div>
-                    </td></tr>
-                    <?php } ?>
-                  <tr><td style="text-align: justify; font-family: sans-serif; padding: 14px;">
+                  </td>
+                <?php } ?>
+                <td>
+                <h2 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal; margin: 14px; font-size: 20px;">
+                   <a style="text-decoration: none;" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
+                </h2>
+                <p style="text-align: justify; font-family: sans-serif; font-size: 10px; margin-top: 14px;">
                     <?php echo create_custom_excerpt($post->post_content); ?>
-                  </td></tr>
-                  </table>
+                </p>
               </td>
             </tr>
             <?php
