@@ -109,10 +109,7 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                 // Extract a thumbnail, return null if no thumb can be found
                 $image = nt_post_image(get_the_ID());
             ?>
-                <tr><td>
-            <table cellspacing="0" cellpadding="0" class="article"
-              style="width: 100%; padding: 0; margin: 0;"
-            ><tr>
+                <tr>
                 <?php if ($image != null) { ?>
                   <td style="padding: 0 14px;" width="33%">
                     <div>
@@ -133,14 +130,10 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                 </p>
               </td>
             </tr>
-          </table>
-        </td></tr>
             <?php
           }
             ?>
-            <table cellspacing="0" cellpadding="0" class="article"
-            style="width: 100%; padding: 0; margin: 0;"
-            ><tr>
+            <tr>
                 <td style="padding: 0 14px;" width="33%">
                   <div>
                     <a style="text-decoration: none;" href="http://phusis.ch/vins/">
@@ -161,9 +154,6 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                   </p>
                 </td>
               </tr>
-            </table>
-            </table>
-                </td></tr>
 </table>
 <hr style="margin: 0 14px;">
 <p style="padding: 0 14px; font-family: sans-serif; font-size: 12px;">
