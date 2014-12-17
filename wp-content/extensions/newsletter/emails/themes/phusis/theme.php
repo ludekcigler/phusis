@@ -114,7 +114,7 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
               style="width: 100%; padding: 0; margin: 0;"
             ><tr>
                 <?php if ($image != null) { ?>
-                  <td style="padding: 0 14px; width: 33%;">
+                  <td style="padding: 0 14px;" width="33%">
                     <div>
                       <img src="<?php echo $image; ?>" width="100%" alt="">
                     </div>
@@ -129,6 +129,7 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                 </p>
               </td>
             </tr>
+          </table>
             <?php
           }
             ?>
