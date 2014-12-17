@@ -116,7 +116,9 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                 <?php if ($image != null) { ?>
                   <td style="padding: 0 14px;" width="33%">
                     <div>
-                      <img src="<?php echo $image; ?>" width="100%" alt="">
+                      <a style="text-decoration: none;" href="<?php echo get_permalink(); ?>">
+                        <img src="<?php echo $image; ?>" width="100%" alt="">
+                      </a>
                     </div>
                   </td>
                 <?php } ?>
@@ -125,7 +127,9 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
                    <a style="text-decoration: none;" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
                 </h2>
                 <p style="text-align: justify; font-family: sans-serif; font-size: 12px; margin-top: 14px;">
+                  <a style="text-decoration: none; color: black;" href="<?php echo get_permalink(); ?>">
                     <?php echo create_custom_excerpt($post->post_content); ?>
+                  </a>
                 </p>
               </td>
             </tr>
@@ -136,23 +140,25 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
             <table cellspacing="0" cellpadding="0" class="article"
             style="width: 100%; padding: 0; margin: 0;"
             ><tr>
-              <a style="text-decoration: none;" href="http://phusis.ch/vins/">
                 <td style="padding: 0 14px;" width="33%">
                   <div>
-                    <img src="http://phusis.ch/index/phusis_transparent.png" width="100%" alt="">
+                    <a style="text-decoration: none;" href="http://phusis.ch/vins/">
+                      <img src="http://phusis.ch/index/phusis_transparent.png" width="100%" alt="">
+                    </a>
                   </div>
                 </td>
                 <td>
                   <h2 style="font-family: 'Hoefler Text', 'Constantia', Georgia, 'Times New Roman', Times, serif; font-weight: normal; margin: 0 14px; font-size: 18px;">
-                    Les nouvelles de PHUSIS Vins
+                    <a style="text-decoration: none;" href="http://phusis.ch/vins/">Les nouvelles de PHUSIS Vins</a>
                   </h2>
                   <p style="text-align: justify; font-family: sans-serif; font-size: 12px; margin-top: 14px;">
+                    <a style="text-decoration: none; color: black;" href="http://phusis.ch/vins/">
                     Alors que les vendanges sont terminées et que les nouveaux vins fermentent en cave, vous avez l'occasion de découvrir les cuvées récemment mises en bouteilles : notamment la nouvelles Arvine méthode champegnoise, l'Arvine vieille vigne 2012, la Durize 2013 et le Vin de paille 2009.
                     <br>
                     Plusieurs dégustations sont programmées : Vendredi et mercredi 21 et 26 (Rte de la Bruyère 3 à La Sarraz). Toujours de 17h30 à 20h. Merci de vous annoncer !
+                    </a>
                   </p>
                 </td>
-              </a>
               </tr>
             </table>
             </table>
