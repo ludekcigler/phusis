@@ -141,7 +141,7 @@ GRÂCE À L’ENGAGEMENT ENTHOUSIASTE de nouveaux collaborateurs, PHUSIS a le pl
               </td>
             </tr>
             <tr>
-                <td style="padding: 10px;" width="104px">
+                <td style="padding: 10px; text-align: center;" width="104px">
                   <div>
                     <a style="text-decoration: none;" href="http://phusis.ch/vins/">
                       <img src="http://phusis.ch/index/phusis_transparent.png" width="84" alt="">
