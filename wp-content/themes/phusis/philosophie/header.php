@@ -68,7 +68,7 @@
       <div class="highlight-menu-item">
       <div>
       <h3><a href="<?php bloginfo('url');?>/philosophie/nietzsche/traductions/zarathoustra/">Zarathoustra</a></h3>
-      <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=24&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
+      <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=24&skip=1&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
       <?php if (function_exists('recent_posts')) recent_posts('included_cats=24&'.$recent_posts_params); ?>
       </div>
       </div>
@@ -78,7 +78,7 @@
       <div class="highlight-menu-item">
       <div>
       <h3><a href="<?php bloginfo('url');?>/dionysos/les-bacchantes/">Les Bacchantes</a></h3>
-      <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=28&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
+      <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=28&skip=1&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
       <?php if (function_exists('recent_posts')) recent_posts('included_cats=28&'.$recent_posts_params); ?>
       </div>
       </div>
@@ -89,7 +89,7 @@
       <div class="highlight-menu-item">
       <div>
       <h3><a href="<?php bloginfo('url');?>/pensees-phusiques/">Chroniques</a></h3>
-      <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=13&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
+      <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=13&skip=1&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
       <?php if (function_exists('recent_posts')) recent_posts('included_cats=13&'.$recent_posts_params); ?>
       </div>
       </div>
@@ -100,7 +100,7 @@
       <div class="highlight-menu-item">
       <div>
       <h3><a href="http://phusis.ch/animations/">Animations</a></h3>
-      <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=6&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
+      <p><?php if (function_exists('recent_posts')) recent_posts('included_cats=6&skip=1&limit=1&prefix=&suffix=&output_template='.$highlight_image_template); ?></p>
       <?php if (function_exists('recent_posts')) recent_posts('included_cats=6&'.$recent_posts_params); ?>
       </div>
       </div>
